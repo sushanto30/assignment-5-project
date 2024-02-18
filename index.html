@@ -17,6 +17,25 @@
             font-family: "Raleway", sans-serif;
 
         }
+        .ticket{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            row-gap: 20px;
+            column-gap: 10px;
+            
+
+        }
+        .seat{
+            background-color: aliceblue;
+            border-radius: 20px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #no1{
+             background-color: white;
+        }
     </style>
 
 </head>
@@ -132,26 +151,81 @@
                     the results directly within the app. The integrated <br> testing features allow for a streamlined .
                 </p>
             </header>
-            <main>
-                <div>
+            <main class="container mx-auto mt-9 flex justify-center bg-[ #F7F8F8] rounded-xl">
+                <div class="flex-1">
+                    <!-- header -->
                     <div class="flex justify-between">
                         <div class="flex flex-row gap-2">
                             <img src="images/bus-logo.png" alt="">
                             <div>
-                                <h1 class="text-4xl font-bold">Greenline Paribahan</h1>
+                                <p class="text-4xl font-bold">Greenline Paribahan</p>
                                 <p class="text-xs font-normal">Coach-009-WEB ! AC_Business</p>
                             </div>
 
                         </div>
-                        <div class="flex flex-row rounded-xl bg-[#73d065] ">
-                            <img src="images/seat-green.png" alt="">
+                        <div class="flex flex-row rounded-xl bg-[#73d065] justify-center w-44 h-14 items-center">
+                            <img class="w-7 h-7" src="images/seat-green.png" alt="">
                             <p><span>40</span> Seats left</p>
                         </div>
                     </div>
+                    <!-- p -->
+                    <div class="bg-[#F7F8F8] p-8 mt-7">
+                        <div class="text-xs font-semibold flex justify-between ">
+                            <p class="text-[#03071299]">Route</p>
+                            <p class="text-[#030712]">Dhaka - Sylhet</p>
 
+                        </div>
+                        <div class="text-xs font-semibold flex justify-between mt-6">
+                            <p class="text-[#03071299]">Departure Time</p>
+                            <p class="text-[#030712]">9:00 PM</p>
+                        </div>
+                        <div class="flex flex-row gap-2 mt-6">
+                            <div class="bg-[#0307120D] w-40 h-10 flex  items-center p-1 rounded-xl ">
+                                <p class="text-xs font-medium  ">Boarding Point - Laxmipur</p>
+                            </div>
+                            <div class="bg-[#0307120D] w-40 h-10 flex  items-center p-1 rounded-xl ">
+                                <p class="text-xs font-medium  ">Dropping Point - Bogura </p>
+                            </div>
+                            <div class="bg-[#0307120D] w-40 h-10 flex  items-center p-1 rounded-xl ">
+                                <p class="text-xs font-medium  "> Est. Time - 11 Hour</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="text-center flex flex-1 flex-col justify-center items-center">
+                    <img class="w-12 h-12" src="images/fare.png" alt="">
+                    <p>550 Taka</p>
+                    <p>Per Seat</p>
                 </div>
             </main>
 
+        </section>
+        <!-- seat section -->
+        <section class="container mx-auto mt-10">
+            <header>
+
+            </header>
+            <main>
+                <div class="ticket">
+                      <div id="no1" class="seat">1</div> 
+                      <div class="seat">A1</div>   
+                      <div class="seat">A2</div>
+                      <div class="seat">A3</div>
+                      <div class="seat">A4</div>
+                      <div id="no1" class="seat">2</div>
+                      <div class="seat">B1</div>  
+                      <div class="seat">B2</div>  
+                      <div class="seat">B3</div>  
+                      <div class="seat">B4</div>  
+                       
+                       
+                       
+                      
+
+                </div>
+            </main>
         </section>
     </main>
     <footer>
